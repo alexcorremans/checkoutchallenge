@@ -24,13 +24,13 @@
 	//if (isset($_GET['v2'])) {
 		$ver = 2;
 		$merchantAccount = merchantAccountv2;
-		$apikey = apikeyv2; //'AQEyhmfxLI3MaBFLw0m/n3Q5qf3VaY9UCJ14XWZE03G/k2NFitRvbe4N1XqH1eHaH2AksaEQwV1bDb7kfNy1WIxIIkxgBw==-y3qzswmlmALhxaVPNjYf74bqPotG12HroatrKA066yE=-W+t7NF;s4}%=kUSD';
-		$clientkey = clientkeyv2; //'test_CIXAPNBW2JERLEJ6GYYC3WBLVMO2HIZ3';
+		$apikey = apikeyv2;
+		$clientkey = clientkeyv2;
 	// } else {
 	// 	$ver = 1;
 	// 	$merchantAccount = merchantAccount;
-	// 	$apikey = apikey; //'AQE1hmfxKo3NaxZDw0m/n3Q5qf3Ve55dHZxYTFdTxWq+l3JOk8J4BO7yyZBJ4o0JviXqoc8j9sYQwV1bDb7kfNy1WIxIIkxgBw==-q7XjkkN/Cud0WELZF+AzXpp/PuCB8+XmcdgqHYUWzTA=-Kk9N4dG837tIyjZF';
-	// 	$clientkey = clientkey; //'test_GWXWP766DVDVHP3NUESVCEBV5AKZCOGJ';
+	// 	$apikey = apikey;
+	// 	$clientkey = clientkey;
 	// }
 
 	$header = ""; $body = ""; $footer = ""; $endbody = "";
@@ -74,10 +74,10 @@
 							<p>Once you have completed the integration, please be prepared to walk us through it (including any challenges you had) during your next interview. Additionally, please share the following:</p>
 							<ul>
 								<li>2 pspReferences (unique payment reference) for two example payments - one card payment and one local payment method.</li>
-								<li>Example requests / responses for the above-mentioned pspReferences for all API calls (merchantAccount: ' . $merchantAccount . ')</li>
+								<li>Example requests / responses for the above-mentioned pspReferences for all API calls (<code>merchantAccount: ' . $merchantAccount . '</code>)</li>
 								<li>Your entire project to us via a ZIP file/Github <strong><u>before</u></strong> the interview so that we can also look at it.</li>
 							</ul>
-							<p>When making your payment request, make sure that the value for your reference field is set to: ' . (isset($_GET['firstname']) ? $_GET['firstname'] : '{yourFirstName}') . '_checkoutChallenge.</p>
+							<p>When making your payment request, make sure that the value for your reference field is set to: <code>' . (isset($_GET['firstname']) ? $_GET['firstname'] : '{yourFirstName}') . '_checkoutChallenge</code>.</p>
 							<p>With regards to the overall UI, feel free to design it in any way you please. Also, the above three conditions are the baseline integration, but feel free to add on more functionality to your checkout flow.</p>
 							<p>Lastly, as there are example integrations online, <u><strong>no pre-built libraries or example code</strong> may be used in your solution</u>. Here are some examples of what we are referring to:</p>
 								<div class="multi-notice">
@@ -130,16 +130,16 @@
 							<div class="sc-notice info">
 							The permitted domains for the above <strong>clientKey</strong> are: <br />
 								<ul>
-									<li>http://localhost:3000</li>
-									<li>http://localhost:5000</li>
-									<li>http://localhost:8000</li>
-									<li>http://localhost:8080</li>
-									<li>http://127.0.0.1:5000</li>
+									<li><code>http://localhost:3000</code></li>
+									<li><code>http://localhost:5000</code></li>
+									<li><code>http://localhost:8000</code></li>
+									<li><code>http://localhost:8080</code></li>
+									<li><code>http://127.0.0.1:5000</code></li>
 								</ul>
 								Please ensure that your website is running on one of the above permitted domains; if not you will be unable to load your credit card fields.<br /><em style="font-size:14px">If you do want to run your server on another domain, feel free to reach out to us and we will add it for you.</em>
 							</div>
 
-							<p>If you are in the midst of testing credit card payments, and are getting a 422: Unable to decrypt data error, that’s an issue with the domain where you are hosting your front-end website or the clientKey. Nonetheless, feel free to reach out to us if you still cannot resolve the error.</p>
+							<p>If you are in the midst of testing credit card payments, and are getting a <code>422: Unable to decrypt data error</code>, that’s an issue with the domain where you are hosting your front-end website or the <code>clientKey</code>. Nonetheless, feel free to reach out to us if you still cannot resolve the error.</p>
 							<p>You don’t need to publicly host your website (however, please feel free to do so). We will schedule a Zoom call for you to share your screen and run through your solution with us.</p>';
 
 
