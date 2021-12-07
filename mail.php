@@ -44,7 +44,7 @@
 												<br style="box-sizing: border-box;">
 
 												Using the programming language of your choice, integrate the following (including backend server):<br style="box-sizing: border-box;">
-												<a href="https://docs.adyen.com/checkout/drop-in-web" style="box-sizing: border-box;color: #007bff;text-decoration: underline;background-color: transparent;">https://docs.adyen.com/checkout/drop-in-web</a><br style="box-sizing: border-box;">
+												<a href="https://docs.adyen.com/online-payments/web-drop-in" style="box-sizing: border-box;color: #007bff;text-decoration: underline;background-color: transparent;">https://docs.adyen.com/online-payments/web-drop-in</a><br style="box-sizing: border-box;">
 												<br style="box-sizing: border-box;">
 
 												At the minimum, your integration needs to meet the conditions below:<br style="box-sizing: border-box;">
@@ -57,13 +57,12 @@
 													<p style="box-sizing: border-box; margin: 0 20px;">
 														2) Accept at least 1 local payment method - for example:
 													 	<ul style="box-sizing: border-box;margin-top: 0;margin-bottom: 0;">
-															<li style="box-sizing: border-box;">Alipay (for CN/SG)</li>
-															<li style="box-sizing: border-box;">POLi (for AU/NZ)</li>
-															<li style="box-sizing: border-box;">iDeal (NL)</li>
+															<li style="box-sizing: border-box;">Alipay (for APAC)</li>
+															<li style="box-sizing: border-box;">iDeal (for NL)</li>
 														</ul>
 													</p>
 													<p style="box-sizing: border-box; margin: 0 20px;">
-														3) Perform 3DS2 on all card payments - <a href="https://docs.adyen.com/checkout/3d-secure/redirect-3ds2-3ds1/web-drop-in" style="box-sizing: border-box;color: #007bff;text-decoration: underline;background-color: transparent;">https://docs.adyen.com/checkout/3d-secure/redirect-3ds2-3ds1/web-drop-in</a>
+														3) Perform 3DS2 on all card payments
 													</p>
 												</div>
 												<br style="box-sizing: border-box;">
@@ -77,50 +76,13 @@
 												When making your payment request, make sure that the value for your reference field is set to: {yourFirstName}_checkoutChallenge.
 												<br style="box-sizing: border-box;"><br style="box-sizing: border-box;">
 												With regards to the overall UI, feel free to design it in any way you please. Also, the above three conditions are the baseline integration, but feel free to add on more functionality to your checkout flow.
-												<br style="box-sizing: border-box;"><br style="box-sizing: border-box;">
-												Lastly, as there are example integrations online, <u style="box-sizing: border-box;"><strong style="box-sizing: border-box;font-weight: bolder;">no pre-built libraries or example code</strong> may be used in your solution</u>.
-												<br style="box-sizing: border-box;">
-
-												Here are some examples of what we are referring to:
-												<div class="multi-notice" style="box-sizing: border-box;">
-													<div class="sc-notice info" style="box-sizing: border-box; border-radius: 3px; margin: 12px 0; min-height: 20px; padding: 12px 12px 12px 48px; position: relative; display: table; border: 3px solid transparent; border-color: green;">
-														<div class="bluebox" style="background: green; display: block;height: 100%;left: 0;position: absolute;top: 0;width: 36px;"></div>
-															<p style="box-sizing: border-box; margin: 0 20px;">
-																Ok to use:
-															</p>
-															<ul style="box-sizing: border-box;margin-top: 0;margin-bottom: 1rem;">
-																<li style="box-sizing: border-box;">PHP: cURL library for HTTP POST requests</li>
-																<li style="box-sizing: border-box;">Python: requests library</li>
-																<li style="box-sizing: border-box;">Node: express/axios</li>
-																<li style="box-sizing: border-box;">C#: HttpClient</li>
-															</ul>
-														</div>
-														<div class="sc-notice info" style="box-sizing: border-box; border-radius: 3px; margin: 12px 0; min-height: 20px; padding: 12px 12px 12px 48px; position: relative; display: table; border: 3px solid transparent; border-color: red;">
-															<div class="bluebox" style="background: red; display: block;height: 100%;left: 0;position: absolute;top: 0;width: 36px;"></div>
-															<p style="box-sizing: border-box; margin: 0 20px;">
-																Not ok to use: API wrappers. For example:
-															</p>
-															<ul style="box-sizing: border-box;margin-top: 0;margin-bottom: 1rem;">
-																<li style="box-sizing: border-box;"><a href="https://github.com/Adyen/adyen-python-api-library" style="box-sizing: border-box;color: #007bff;text-decoration: underline;background-color: transparent;">https://github.com/Adyen/adyen-python-api-library</a></li>
-																<li style="box-sizing: border-box;"><a href="https://github.com/Adyen/adyen-java-api-library" style="box-sizing: border-box;color: #007bff;text-decoration: underline;background-color: transparent;">https://github.com/Adyen/adyen-java-api-library</a></li>
-																<li style="box-sizing: border-box;"><a href="https://github.com/Adyen/adyen-php-api-library" style="box-sizing: border-box;color: #007bff;text-decoration: underline;background-color: transparent;">https://github.com/Adyen/adyen-php-api-library</a></li>
-																<li style="box-sizing: border-box;"><a href="https://github.com/Adyen/adyen-dotnet-api-library" style="box-sizing: border-box;color: #007bff;text-decoration: underline;background-color: transparent;">https://github.com/Adyen/adyen-dotnet-api-library</a></li>
-																<li style="box-sizing: border-box;"><a href="https://github.com/Adyen/adyen-node-api-library" style="box-sizing: border-box;color: #007bff;text-decoration: underline;background-color: transparent;">https://github.com/Adyen/adyen-node-api-library</a></li>
-															</ul>
-														</div>
-													</div>
 													<br style="box-sizing: border-box;">
 													<strong style="box-sizing: border-box;font-weight: bolder;">Helpful Links</strong>
 													<div class="sc-notice info" style="box-sizing: border-box; border-radius: 3px; margin: 12px 0; min-height: 20px; padding: 12px 12px 12px 48px; position: relative; display: table; border: 3px solid transparent; border-color: #cce0ff;">
 														<div class="bluebox" style="background: #cce0ff; display: block; height: 100%; left: 0; position: absolute; top: 0; width: 36px;"></div>
 														<ul style="box-sizing: border-box;margin-top: 0;margin-bottom: 1rem;">
 															<li style="box-sizing: border-box;">
-																Drop-in Documentation
-																<ul style="box-sizing: border-box;margin-top: 0;margin-bottom: 0;">
-																	<li style="box-sizing: border-box;"><a href="https://docs.adyen.com/checkout/drop-in-web" style="box-sizing: border-box;color: #007bff;text-decoration: underline;background-color: transparent;">https://docs.adyen.com/checkout/drop-in-web</a></li>
-																	<li style="box-sizing: border-box;"><a href="https://docs.adyen.com/checkout/3d-secure/redirect-3ds2-3ds1/web-drop-in" style="box-sizing: border-box;color: #007bff;text-decoration: underline;background-color: transparent;">https://docs.adyen.com/checkout/3d-secure/redirect-3ds2-3ds1/web-drop-in</a></li>
-																</ul>
-															</li>
+																Drop-in Documentation: <a href="https://docs.adyen.com/online-payments/web-drop-in" style="box-sizing: border-box;color: #007bff;text-decoration: underline;background-color: transparent;">https://docs.adyen.com/online-payments/web-drop-in</a></li>
 															<li style="box-sizing: border-box;">Test credentials: <a href="https://docs.adyen.com/developers/test-cards/test-card-numbers" style="box-sizing: border-box;color: #007bff;text-decoration: underline;background-color: transparent;">https://docs.adyen.com/developers/test-cards/test-card-numbers</a></li>
 															<li style="box-sizing: border-box;">Code examples: <a href="https://github.com/Adyen/" style="box-sizing: border-box;color: #007bff;text-decoration: underline;background-color: transparent;">https://github.com/Adyen/</a></li>
 														</ul>

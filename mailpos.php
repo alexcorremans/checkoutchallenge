@@ -18,7 +18,7 @@
 		$ver = $_GET['version'];
 	}
 
-	$terminalid = 'V400m-346190779';
+	$terminalid = 'V400m-346533886';
 
 		$html = '<body style="box-sizing: border-box;margin: 0;font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,&quot;Helvetica Neue&quot;,Arial,&quot;Noto Sans&quot;,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,&quot;Segoe UI Symbol&quot;,&quot;Noto Color Emoji&quot;;font-size: 1rem;font-weight: 400;line-height: 1.5;color: #212529;text-align: left;background-color: #fff;min-width: 992px!important;">
 				<div id="body" style="box-sizing: border-box;">

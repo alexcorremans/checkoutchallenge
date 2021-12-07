@@ -56,19 +56,18 @@
 							<h5>Challenge 1: Checkout, Checkout, Checkout</h5>
 							<p>You will be using Adyen’s Checkout Drop-in web solution to integrate a typical eCommerce shopper checkout flow. <br />Follow the instructions below and don\'t hesitate to reach out to us if you need any help!</p>
 							<p>Using the programming language of your choice, integrate the following (including backend server): <br />
-							<a href="https://docs.adyen.com/checkout/drop-in-web">https://docs.adyen.com/checkout/drop-in-web</a>.</p>
+							<a href="https://docs.adyen.com/online-payments/web-drop-in">https://docs.adyen.com/online-payments/web-drop-in</a>.</p>
 							<p>At the minimum, your integration needs to meet the conditions below:</p>
 							<div class="sc-notice info">
 								<ol>
 									<li>Accept card payments (Visa and Mastercard)</li>
 									<li>Accept at least 1 local payment method - for example:
 									 	<ul>
-											<li>Alipay (for CN/SG)</li>
-											<li>POLi (for AU/NZ)</li>
-											<li>iDEAL (NL)</li>
+											<li>Alipay (for APAC)</li>
+											<li>iDEAL (for NL)</li>
 										</ul>
 									</li>
-									<li>Perform 3DS2 on all card payments - <a href="https://docs.adyen.com/checkout/3d-secure/redirect-3ds2-3ds1/web-drop-in">https://docs.adyen.com/checkout/3d-secure/redirect-3ds2-3ds1/web-drop-in</a></li>
+									<li>Perform 3DS2 on all card payments</li>
 								</ol>
 							</div>
 							<p>Once you have completed the integration, please be prepared to walk us through it (including any challenges you had) during your next interview. Additionally, please share the following:</p>
@@ -79,41 +78,11 @@
 							</ul>
 							<p>When making your payment request, make sure that the value for your reference field is set to: ' . (isset($_GET['firstname']) ? $_GET['firstname'] : '{yourFirstName}') . '_checkoutChallenge.</p>
 							<p>With regards to the overall UI, feel free to design it in any way you please. Also, the above three conditions are the baseline integration, but feel free to add on more functionality to your checkout flow.</p>
-							<p>Lastly, as there are example integrations online, <u><strong>no pre-built libraries or example code</strong> may be used in your solution</u>. Here are some examples of what we are referring to:</p>
-								<div class="multi-notice">
-									<div class="sc-notice info rorw ok">
-										OK to use:
-										<div class="fillspace">
-											<ul>
-												<li>PHP: cURL library for HTTP POST requests</li>
-												<li>Python: requests library</li>
-												<li>Node: express/axios</li>
-												<li>C#: HttpClient</li>
-											</ul>
-										</div>
-									</div>
-									<div class="sc-notice info rorw not">
-										Not ok to use: API wrappers. For example:
-										<ul>
-											<li><a href = "https://github.com/Adyen/adyen-python-api-library">https://github.com/Adyen/adyen-python-api-library</a></li>
-											<li><a href = "https://github.com/Adyen/adyen-java-api-library">https://github.com/Adyen/adyen-java-api-library</a></li>
-											<li><a href = "https://github.com/Adyen/adyen-php-api-library">https://github.com/Adyen/adyen-php-api-library</a></li>
-											<li><a href = "https://github.com/Adyen/adyen-dotnet-api-library">https://github.com/Adyen/adyen-dotnet-api-library</a></li>
-											<li><a href = "https://github.com/Adyen/adyen-node-api-library">https://github.com/Adyen/adyen-node-api-library</a></li>
-										</ul>
-									</div>
-								</div>
 							<br />
 							<strong>Helpful Links</strong>
 							<div class="sc-notice info">
 								<ul>
-									<li>
-										Drop-in Documentation
-										<ul>
-											<li><a href="https://docs.adyen.com/checkout/drop-in-web">https://docs.adyen.com/checkout/drop-in-web</a></li>
-											<li><a href="https://docs.adyen.com/checkout/3d-secure/redirect-3ds2-3ds1/web-drop-in">https://docs.adyen.com/checkout/3d-secure/redirect-3ds2-3ds1/web-drop-in</a></li>
-										</ul>
-									</li>
+									<li>Drop-in Documentation: <a href="https://docs.adyen.com/online-payments/web-drop-in">https://docs.adyen.com/online-payments/web-drop-in</a></li>
 									<li>Test credentials: <a href="https://docs.adyen.com/developers/test-cards/test-card-numbers">https://docs.adyen.com/developers/test-cards/test-card-numbers</a></li>
 									<li>Code examples: <a href="https://github.com/Adyen/">https://github.com/Adyen/</a></li>
 								</ul>

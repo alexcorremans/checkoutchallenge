@@ -21,7 +21,7 @@
 		$countDetails++;
 	}
 
-	$terminalid = 'V400m-346190779';
+	$terminalid = 'V400m-346533886';
 
 	$header = ""; $body = ""; $footer = ""; $endbody = "";
 
